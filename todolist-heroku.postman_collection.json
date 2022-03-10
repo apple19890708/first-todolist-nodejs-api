@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "0a6e99ce-ea1a-452b-a0b6-a7f871a45040",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://thawing-ravine-22705.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"thawing-ravine-22705",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"新增一筆資料69\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thawing-ravine-22705.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"thawing-ravine-22705",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除 所有 / 單筆 代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"新增一筆資料69\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thawing-ravine-22705.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"thawing-ravine-22705",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"修改後的資料\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thawing-ravine-22705.herokuapp.com/todos/0ac23243-8d26-4661-92b1-8b55ce1f7122",
+					"protocol": "https",
+					"host": [
+						"thawing-ravine-22705",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"0ac23243-8d26-4661-92b1-8b55ce1f7122"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
