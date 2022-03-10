@@ -55,7 +55,36 @@
 			"response": []
 		},
 		{
-			"name": "刪除 所有 / 單筆 代辦",
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"新增一筆資料69\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thawing-ravine-22705.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"thawing-ravine-22705",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
 			"request": {
 				"method": "DELETE",
 				"header": [],
